@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a programar</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/css/index.css">
+    <!-- Material Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+    <header class="cabecalho close">
+        <div class="cabecalho__container_header">
+            <div class="container_header__title">
+                <span class="material-symbols-outlined title__icon">dashboard</span>
+                <p class="title__text">Aprendendo a programar</p>
+            </div>
+            <div class="container_header__options">
+                <div class="options__header_top">
+                    <span class="material-symbols-outlined header_top__icon">home_app_logo</span>
+                    <span class="header_top__text">Começo</span>
+                </div>
+                <ul class="options__items">
+                    <li class="items__subitem i1">
+                        <span class="material-symbols-outlined item__icon">home</span>
+                        <span class="item__text">Início</span>
+                    </li>
+                </ul>
+                <div class="options__header_top">
+                    <span class="material-symbols-outlined header_top__icon">html</span>
+                </div>
+                <ul class="options__items">
+                    <li class="items__subitem t1">
+                        <span class="material-symbols-outlined item__icon">psychology_alt</span>
+                        <span class="item__text">O que é HTML</span>
+                    </li>
+                    <li class="items__subitem t2">
+                        <span class="material-symbols-outlined item__icon">cognition_2</span>
+                        <span class="item__text">Conhecendo a estrutura HTML</span>
+                    </li>
+                    <li class="items__subitem t3">
+                        <span class="material-symbols-outlined item__icon">cognition_2</span>
+                        <span class="item__text">Entendendo o que são tags</span>
+                    </li>
+                    <li class="items__subitem t4">
+                        <span class="material-symbols-outlined item__icon">psychology</span>
+                        <span class="item__text">Atributos em tags</span>
+                    </li>
+                </ul>
+                <div class="options__header_top">
+                    <span class="material-symbols-outlined header_top__icon">css</span>
+                </div>
+                <ul class="options__items">
+                    <li class="items__subitem t5">
+                        <span class="material-symbols-outlined item__icon">psychology_alt</span>
+                        <span class="item__text">O que é CSS</span>
+                    </li>
+                    <li class="items__subitem t6">
+                        <span class="material-symbols-outlined item__icon">cognition_2</span>
+                        <span class="item__text">Entendendo o que são seletores</span>
+                    </li>
+                    <li class="items__subitem t7">
+                        <span class="material-symbols-outlined item__icon">psychology</span>
+                        <span class="item__text">Propriedades e valores</span>
+                    </li>
+                </ul>
+                <div class="options__header_top">
+                    <span class="material-symbols-outlined header_top__icon">javascript</span>
+                </div>
+                <ul class="options__items">
+                    <li class="items__subitem t8">
+                        <span class="material-symbols-outlined item__icon">psychology_alt</span>
+                        <span class="item__text">O que é JavaScript</span>
+                    </li>
+                    <li class="items__subitem t9">
+                        <span class="material-symbols-outlined item__icon">psychology_alt</span>
+                        <span class="item__text">O que é Programação</span>
+                    </li>
+                    <li class="items__subitem t10">
+                        <span class="material-symbols-outlined item__icon">cognition_2</span>
+                        <span class="item__text">Aprendendo sobre variaveis</span>
+                    </li>
+                    <li class="items__subitem t11">
+                        <span class="material-symbols-outlined item__icon">psychology</span>
+                        <span class="item__text">Armazenando Elementos HTML</span>
+                    </li>
+                    <li class="items__subitem t12">
+                        <span class="material-symbols-outlined item__icon">psychology</span>
+                        <span class="item__text">Manipulando uma pagina web com o DOM</span>
+                    </li>
+                    <li class="items__subitem t13">
+                        <span class="material-symbols-outlined item__icon">psychology</span>
+                        <span class="item__text">Criando eventos com JavaScript</span>
+                    </li>
+                    <li class="items__subitem t14">
+                        <span class="material-symbols-outlined item__icon">cognition_2</span>
+                        <span class="item__text">Exemplo Modo Dia e Noite com JavaScript</span>
+                    </li>
+                </ul>
+                <div class="options__header_top">
+                    <span class="material-symbols-outlined header_top__icon">psychology</span>
+                    <span class="item__text">Praticando</span>
+                </div>
+                <ul class="options__items">
+                    <li class="items__subitem q1">
+                        <span class="material-symbols-outlined item__icon">assignment</span>
+                        <span class="item__text">HTML</span>
+                    </li>
+                    <li class="items__subitem q2">
+                        <span class="material-symbols-outlined item__icon">assignment</span>
+                        <span class="item__text">CSS</span>
+                    </li>
+                    <li class="items__subitem q3">
+                        <span class="material-symbols-outlined item__icon">assignment</span>
+                        <span class="item__text">JavaScript</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cabecalho__icons">
+            <span class="material-symbols-outlined icons__icon">dashboard</span>
+            <span class="material-symbols-outlined icons__icon">home_app_logo</span>
+            <span class="material-symbols-outlined icons__icon">home</span>
+            <span class="material-symbols-outlined icons__icon">info</span>
+            <span class="material-symbols-outlined icons__icon">html</span>
+            <span class="material-symbols-outlined icons__icon">css</span>
+            <span class="material-symbols-outlined icons__icon">javascript</span>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container_content">
+            <div class="container_content__item_list bem_vindo">
+                <div class="item_list__fnd_opc"></div>
+                <div class="item_list__content">
+                    <h1 class="content__title" id="i1"> <img src="src/images/www.svg" alt=""> <span>Bem-vindo a aula de Programação Web!</span></h1>
+                    <p class="content__text">
+                        Neste conteúdo, vamos aprender a criar uma página web do zero, entendendo como funciona a estrutura básica de um site. Você vai descobrir como utilizar o JavaScript para criar interações dinâmicas, tornando seu site mais funcional e interativo.
+                    </p>
+                </div>
+            </div>
+            <div class="container_content__item_list vai_aprender">
+                <div class="item_list__blocks_fnd"></div>
+                <div class="item_list__blocks_fnd"></div>
+                <div class="item_list__content">
+                    <h2><span class="material-symbols-outlined">psychology</span><span>O que você vai aprender:</span></h2>
+                    <ul class="content__aprender">
+                        <div class="aprender__container html">
+                            <li class="container__title">
+                                <span>HTML5</span>
+                                <img src="src/images/html-5.png" alt="Imagem do HTML5">
+                            </li>
+                            <ul class="container__ops">
+                                <li class="ops__op"><a href="#t1">O que é HTML</a></li>
+                                <li class="ops__op"><a href="#t2">Conhecendo a estrutura HTML</a></li>
+                                <li class="ops__op"><a href="#t3">Entendendo o que são tags</a></li>
+                                <li class="ops__op"><a href="#t4">Atributos em tags</a></li>
+                            </ul>
+                        </div>
+                        <div class="aprender__container css">
+                            <li class="container__title">
+                                <span>CSS</span>
+                                <img src="src/images/css-3.png" alt="Imagem do CSS3">
+                            </li>
+                            <ul class="container__ops">
+                                <li class="ops__op"><a href="#t5">O que é CSS</a></li>
+                                <li class="ops__op"><a href="#t6">Entendendo o que são seletores</a></li>
+                                <li class="ops__op"><a href="#t7">Propriedades e valores</a></li>
+                            </ul>
+                        </div>
+                        <div class="aprender__container js">
+                            <li class="container__title">
+                                <span>JavaScript</span>
+                                <img src="src/images/js_b.png" alt="Imagem do JavaScript">
+                            </li>
+                            <ul class="container__ops">
+                                <li class="ops__op"><a href="#t8">O que é JavaScript</a></li>
+                                <li class="ops__op"><a href="#t9">O que é Programação</a></li>
+                                <li class="ops__op"><a href="#t10">Aprendendo sobre variaveis</a></li>
+                                <li class="ops__op"><a href="#t11">Armazenando Elementos HTML</a></li>
+                                <li class="ops__op"><a href="#t12">Manipulando uma pagina web com o DOM</a></li>
+                                <li class="ops__op"><a href="#t13">Criando eventos com JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="container_content__item_list">
+                <div class="item_list__content_primary html">
+                    <div class="content_primary__fnd"></div>
+                    <div class="content_primary__content">
+                        <h2 class="content__title" id="t1">
+                            <img src="src/images/html-5.png" alt="Imagem do HTML5">
+                            <span>O que é HTML?</span>
+                        </h2>
+                        <p class="content__text">
+                            HTML (HyperText Markup Language) é a linguagem de marcação usada para criar páginas web.
+                            Ele é usado para criar o conteúdo da página, como textos, imagens, links e outros elementos.
+                            Com HTML, você pode criar uma página web simples ou complexa, dependendo do que você deseja fazer.
+                        </p>
+                    </div>
+                </div>
+                <div class="item_list__content">
+                    <h2 id="t2">Conhecendo a estrutura HTML</h2>
+                    <p class="content__text">
+                        O HTML é composto por varios elementos que são usados para estruturar o conteúdo da página.
+                        Cada elemento é definido por uma tag, que é uma palavra-chave que envolve sinais de maior e menor envolta da tag (<span class="tag-b">&lt;</span> e <span class="tag-b">&gt;</span>).
+                        A estrutura básica de um documento HTML é a seguinte:
+                    </p>
+                    <div class="content__struct_html">
+                        <pre class="struct_html__cod_html">
+                            <span class="type_command">html</span>
+                            <span class="struct_html__item"><span class="tag">&lt;!DOCTYPE</span>html<span class="tag">&gt;</span></span>
+                            <span class="struct_html__item"><span class="tag">&lt;html</span> <span class="attr-name">lang</span><span class="attr-value">="pt-br"</span><span class="tag">&gt;</span></span>
+                            <span class="struct_html__item"><span class="tag">&lt;head&gt;</span></span>
+                            <span class="struct_html__item"><span class="tag">&lt;meta</span> <span class="attr-name">charset</span><span class="attr-value">="UTF-8"</span><span class="tag">&gt;</span></span>
+                            <span class="struct_html__item"><span class="tag">&lt;title&gt;</span><span class="text">Título da Página</span><span class="tag">&lt;/title&gt;</span></span>
+                            <span class="struct_html__item"><span class="tag">&lt;/head&gt;</span></span>
+                            <span class="struct_html__item"><span class="tag">&lt;body&gt;</span></span>
+                            <span class="struct_html__item"><span class="tag">&lt;h1&gt;</span><span class="text">Título Principal</span><span class="tag">&lt;/h1&gt;</span></span>
+                            <span class="struct_html__item"><span class="tag">&lt;p&gt;</span><span class="text">Este é um parágrafo de texto.</span><span class="tag">&lt;/p&gt;</span></span>
+                            <span class="struct_html__item"><span class="tag">&lt;/body&gt;</span></span>
+                            <span class="struct_html__item"><span class="tag">&lt;/html&gt;</span></span>
+                        </pre>
+                    </div>
+                    <div class="content__exemplo_cod">
+                        <div class="exemplo_cod__exemplo">
+                            <p class="exemplo__title">Declaração do documento</p>
+                            <div class="exemplo__container_cod">
+                                <span class="type_command">html</span>
+                                <span class="container_cod__item"><span class="tag">&lt;!DOCTYPE</span>html<span class="tag">&gt;</span></span>
+                            </div>
+                            <ul class="exemplo__lis">
+                                <li>Essa tag informa ao navegador que estamos utilizando o padrão HTML5, a versão mais recente da linguagem.</li>
+                                <li>Deve ser sempre a primeira linha do seu código HTML.</li>
+                            </ul>
+                        </div>
+                        <div class="exemplo_cod__exemplo">
+                            <p class="exemplo__title">Tag <span class="tag-b">&lt;html&gt;</span></p>
+                            <div class="exemplo__container_cod">
+                                <span class="type_command">html</span>
+                                <span class="container_cod__item"><span class="tag">&lt;html</span> <span class="attr-name">lang</span><span class="attr-value">="pt-br"</span><span class="tag">&gt;</span></span>
+                            </div>
+                            <ul class="exemplo__lis">
+                                <li>A tag raiz do seu documento.</li>
+                                <li>Envolve todo o conteúdo da página, tanto o que aparece quanto o que fica nos bastidores.</li>
+                                <li>O atributo lang="pt-br" define o idioma da página como português brasileiro.</li>
+                            </ul>
+                        </div>
+                        <div class="exemplo_cod__exemplo">
+                            <p class="exemplo__title">Tag <span class="tag-b">&lt;head&gt;</span></p>
+                            <div class="exemplo__container_cod">
+                                <span class="type_command">html</span>
+                                <span class="container_cod__item"><span class="tag">&lt;head&gt;</span>...<span class="tag">&lt;/head&gt;</span></span>
+                            </div>
+                            <ul class="exemplo__lis">
+                                <li>Contém informações importantes da página, que não são exibidas diretamente no corpo visível.</li>
+                                <li>Exemplos: Título da página, Link CSS e Scripts</li>
+                            </ul>
+                        </div>
+                        <div class="exemplo_cod__exemplo">
+                            <p class="exemplo__title">Tag <span class="tag-b">&lt;meta&gt;</span></p>
+                            <div class="exemplo__container_cod">
+                                <span class="type_command">html</span>
+                                <span class="container_cod__item"><span class="tag">&lt;meta</span> <span class="attr-name">charset</span><span class="attr-value">="UTF-8"</span><span class="tag">&gt;</span></span>
+                            </div>
+                            <ul class="exemplo__lis">
+                                <li>Define a codificação de caracteres como UTF-8.</li>
+                                <li>Isso é essencial para que acentuações da língua portuguesa, apareçam corretamente.</li>
+                                <li>Evita erros com caracteres estranhos (como � ou símbolos).</li>
+                            </ul>
+                        </div>
+                        <div class="exemplo_cod__exemplo">
+                            <p class="exemplo__title">Tag <span class="tag-b">&lt;title&gt;</span></p>
+                            <div class="exemplo__container_cod">
+                                <span class="type_command">html</span>
+                                <span class="container_cod__item"><span class="tag">&lt;title&gt;</span>Título da Página<span class="tag">&lt;/title&gt;</span></span>
+                            </div>
+                            <ul class="exemplo__lis">
+                                <li>Define o título da página que aparece na aba do navegador.</li>
+                            </ul>
+                        </div>
+                        <div class="exemplo_cod__exemplo">
+                            <p class="exemplo__title">Tag <span class="tag-b">&lt;body&gt;</span></p>
+                            <div class="exemplo__container_cod">
+                                <span class="type_command">html</span>
+                                <span class="container_cod__item"><span class="tag">&lt;body&gt;</span>...<span class="tag">&lt;/body&gt;</span></span>
+                            </div>
+                            <ul class="exemplo__lis">
+                                <li>Contém todo o conteúdo visível ao usuário.</li>
+                                <li>Tudo o que for exibido no navegador estará dentro dela: textos, imagens, botões, links etc.</li>
+                            </ul>
+                        </div>
+                        <div class="exemplo_cod__exemplo">
+                            <p class="exemplo__title">Tag <span class="tag-b">&lt;h1&gt;</span></p>
+                            <div class="exemplo__container_cod">
+                                <span class="type_command">html</span>
+                                <span class="container_cod__item"><span class="tag">&lt;h1&gt;</span>Título Principal<span class="tag">&lt;/h1&gt;</span></span>
+                            </div>
+                            <ul class="exemplo__lis">
+                                <li>Usada para o título mais importante da página.</li>
+                                <li>Por padrão, o navegador o exibe em negrito e com tamanho grande.</li>
+                            </ul>
+                        </div>
+                        <div class="exemplo_cod__exemplo">
+                            <p class="exemplo__title">Tag <span class="tag-b">&lt;p&gt;</span></p>
+                            <div class="exemplo__container_cod">
+                                <span class="type_command">html</span>
+                                <span class="container_cod__item"><span class="tag">&lt;h1&gt;</span>Este é um parágrafo de texto.<span class="tag">&lt;/h1&gt;</span></span>
+                            </div>
+                            <ul class="exemplo__lis">
+                                <li>Utilizada para exibir textos em blocos, como parágrafos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_list__content">
+                    <h2 class="content__title" id="t3">
+                        <span class="material-symbols-outlined">psychology</span>
+                        <span>Entendendo o que são tags</span>
+                    </h2>
+                    <p>
+                        As tags são os elementos do HTML, e são usadas para definir o conteúdo da página.
+                        Cada tag tem sua propria função especifica no código, como definir um título, um parágrafo, uma imagem, um link, e entre outros.
+                        As tags são escritas com sinais de maior e menor (<span class="tag-b">&lt;</span> e <span class="tag-b">&gt;</span>), elas geralmente vem em pares, com uma tag de abertura e uma tag de fechamento.
+                        Por exemplo, a tag <span class="tag-b">&lt;p&gt;</span> é usada para definir um parágrafo, e a tag de fechamento é <span class="tag-b">&lt;/p&gt;</span>
+                        Existem também tags que não precisam de fechamento, como a tag <span class="tag-b">&lt;br&gt;</span> que é usada para criar uma quebra de linha.
+                        Irei citar algumas tags mais comuns que você irá utilizar no HTML:
+                    </p>
+                    <ul class="content__tags_list">
+                        <li class="tags_list__tag"><span class="tag-b">&lt;div&gt;</span>: A tag div é usada para agrupar elementos, e pode ser usada para criar seções na página.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;h1&gt;</span> até <span class="tag-b">&lt;h6&gt;</span>: As tags h1 até h6 são usadas para definir títulos, onde h1 é o título mais importante e h6 é o menos importante.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;a&gt;</span>: A tag a é usada para criar links, podemos definir o destino do link com o atributo <span class="attr-b">href</span>.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;img&gt;</span>: A tag img é usada para exibir imagens, podemos definir o caminho da imagem com o atributo <span class="attr-b">src</span>.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;ul&gt;</span> e <span class="tag-b">&lt;li&gt;</span>: A tag ul é usada para criar listas não ordenadas, e a tag li é usada para definir cada item da lista.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;ol&gt;</span> e <span class="tag-b">&lt;li&gt;</span>: A tag ol é usada para criar listas ordenadas, e a tag li é usada para definir cada item da lista.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;input&gt;</span>: O input é uma tag que recebe dados do teclado, onde podemos definir o tipo de entrada também com a definição do atributo <span class="attr-b">type</span>.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;form&gt;</span>: A tag form é usada para criar formulários, onde podemos coletar dados do usuário.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;header&gt;</span>: A tag header é usada para definir o cabeçalho da página, onde podemos colocar o título e a navegação.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;nav&gt;</span>: A tag nav é usada para definir a navegação da página, onde podemos colocar links para outras páginas ou seções.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;main&gt;</span>: A tag main é usada para definir o conteúdo principal da página, onde podemos colocar o conteúdo mais importante.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;footer&gt;</span>: A tag footer é usada para definir o rodapé da página, onde podemos colocar informações de copyright e links adicionais.</li>
+                        <li class="tags_list__tag"><span class="tag-b">&lt;section&gt;</span>: A tag section é usada para definir seções na página, onde podemos agrupar conteúdo relacionado.</li>
+
+                    </ul>
+                </div>
+                <div class="item_list__content">
+                    <h2 id="t4">Atributos em tags</h2>
+                    <p>
+                        Como já conhecimos as tags, agora vamos entender o que são atributos.
+                        Atributos são informações adicionais que podemos adicionar às tags para definir características ou comportamentos específicos.
+                        Eles são escritos dentro da tag de abertura, e geralmente são compostos por um nome e um valor, separados por um sinal de igual (=).
+                        Por exemplo, a tag <span class="tag-b">&lt;a&gt;</span> pode ter um atributo <span class="attr-b">href</span> que define o destino do link, como em <span class="tag-b">&lt;a href="https://www.exemplo.com"&gt;</span>Link<span class="tag-b">&lt;/a&gt;</span>.
+                        Outro exemplo é a tag <span class="tag-b">&lt;img&gt;</span>, que pode ter um atributo <span class="attr-b">src</span> que define o caminho da imagem, como em <span class="tag-b">&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</span>.
+                        Os atributos são opcionais, mas podem ser muito úteis para definir o comportamento e a aparência dos elementos na página.
+                    </p>
+                </div>
+            </div>
+            <div class="container_content__item_list">
+                <div class="item_list__content_primary css">
+                    <div class="content_primary__fnd"></div>
+                    <div class="content_primary__content">
+                        <h2 class="content__title" id="t5">
+                            <img src="src/images/css-3.png" alt="Imagem do CSS3">
+                            <span>O que é CSS</span>
+                        </h2>
+                        <p class="content__text">
+                            CSS (Cascading Style Sheets) é uma linguagem de estilo usada para definir a aparência e o layout de uma página web.
+                            Ele é usado para estilizar o conteúdo HTML, como cores, fontes, tamanhos, margens, espaçamentos e muito mais.
+                            Com CSS, você pode criar páginas web bonitas e atraentes, e podemos aplicar os estilos aos elementos HTML de forma fácil através de seletores, que são usados para selecionar os elementos que você deseja estilizar.
+                        </p>
+                    </div>
+                </div>
+                <div class="item_list__content">
+                    <h2 id="t6">Entendendo o que são seletores</h2>
+                    <p>
+                        Seletores são usados para identificar os elementos HTML que você deseja estilizar com CSS.
+                        Existem vários tipos de seletores, como seletores de tag, classe, id e atributos.
+                        Os seletores de tag são usados para selecionar todos os elementos de uma determinada tag, como <span class="tag-b">p</span> para selecionar todos os parágrafos.
+                        Os seletores de classe são usados para selecionar elementos com uma classe específica, como <span class="tag-b">.minha-classe</span> para selecionar todos os elementos com a classe "minha-classe".
+                        Os seletores de id são usados para selecionar um elemento com um id específico, como <span class="tag-b">#meu-id</span> para selecionar o elemento com o id "meu-id".
+                        Os seletores de atributos são usados para selecionar elementos com um atributo específico, como <span class="tag-b">[type="text"]</span> para selecionar todos os elementos com o atributo type igual a "text".
+                        Mas como eu posso aplicar um seletor em uma tag HTML?
+                        Para aplicar um seletor em uma tag HTML, você precisa escrever o seletor que você deseja, como por exemplo a classe ou o id, se for uma classe você deve colocar na tag dessa forma <span class="tag-b">&lt;tag class="minha-classe"&gt;</span>, e se for um id você deve colocar na tag dessa forma <span class="tag-b">&lt;tag id="meu-id"&gt;</span>.
+                    </p>
+                </div>
+                <div class="item_list__content">
+                    <h2 id="t7">Propriedades e valores</h2>
+                    <p>
+                        As propriedades são usadas para definir as características dos elementos HTML, como cor, tamanho, fonte, margem, espaçamento e muito mais.
+                        Cada propriedade tem um valor associado que define como a propriedade deve ser aplicada.
+                        Por exemplo, a propriedade <span class="tag-b">color</span> é usada para definir a cor do texto, e o valor pode ser uma cor específica, como <span class="tag-b">red</span> ou <span class="tag-b">#ff0000</span>, esse código: #ff0000, é uma cor em código hexadecimal, nesse exemplo é o vermelho.
+                        Outro exemplo é a propriedade <span class="tag-b">font-size</span>, que é usada para definir o tamanho da fonte, e o valor pode ser um número seguido de uma unidade de medida, como <span class="tag-b">16px</span> ou <span class="tag-b">1pt</span>.
+                        As propriedades e valores são escritos em pares, separados por dois pontos (:), e cada par é separado por ponto e vírgula (;).
+                        Por exemplo:
+                        <div class="command_css">
+                            <span class="type_command">css</span>
+                            <span><span class="pp">p</span> {</span>
+                                <span>color: <span class="pp">red</span>;</span>
+                                <span>font-size: <span class="pp">16px</span>;</span>
+                            <span>}</span>
+                        </div>
+                        Nesse exemplo, estamos selecionando todos os parágrafos (<span class="tag-b">p</span>) e aplicando as propriedades <span class="tag-b">color</span> e <span class="tag-b">font-size</span> com os valores <span class="tag-b">red</span> e <span class="tag-b">16px</span>, então logo todos os paragrafos terão a cor vermelha e o tamanho 16px.
+                    </p>
+                </div>
+            </div>
+            <div class="container_content__item_list">
+                <div class="item_list__content_primary js">
+                    <div class="content_primary__fnd"></div>
+                    <div class="content_primary__content">
+                        <h2 class="content__title" id="t8">
+                            <img src="src/images/js_b.png" alt="Imagem do JavaScript">
+                            <span>O que é JavaScript</span>
+                        </h2>
+                        <p class="content__text">
+                            JavaScript é uma linguagem de programação usada para criar interatividade em páginas web.
+                            Ele é usado para adicionar comportamento aos elementos HTML, como responder a eventos, manipular o DOM (Document Object Model) e muito mais.
+                            Com JavaScript, você pode criar páginas web interativas, como formulários dinâmicos, animações, jogos e muito mais.
+                            É uma linguagem muito poderosa, e é amplamente usada no desenvolvimento web.
+                        </p>
+                    </div>
+                </div>
+                <div class="item_list__content">
+                    <h2 id="t9">O que é Programação?</h2>
+                    <p>
+                        Programação é dar instruções a um computador para que ele faça algo.
+                        Essas instruções são escritas em uma linguagem que o computador entende, como o HTML e o JavaScript, que vamos aprender aqui.
+                    </p>
+                    <br>
+                    <p>
+                        Com programação conseguimos criar muitas coisas legais, como por exemplo: 
+                    </p>
+                    <ul class="list_exemplo">
+                        <li>Sites (como este que você está vendo, o Youtube, Instagram...)</li>
+                        <li>Aplicativos</li>
+                        <li>Jogos</li>
+                        <li>Robôs</li>
+                    </ul>
+                    <p>
+                        Ou seja, a programação é como ensinar o computador a trabalhar para você.
+                    </p>
+                </div>
+                <div class="item_list__content">
+                    <h2 id="t10">Aprendendo sobre variaveis</h2>
+                    <p>
+                        <strong>O que é uma variável?</strong>
+                    </p>
+                    <p>
+                        Variáveis são como caixas onde podemos guardar informações temporariamente.
+                        Vamos pensar em um armário com vários espaços que podemos preencher com algo — veja isso como espaços de memória do computador que podemos utilizar para guardar dados. 
+                        Para isso, utilizamos variáveis.
+                    </p>
+                    <p>
+                        Em JavaScript, podemos criar variáveis usando as palavras-chave 
+                        <span class="tag-b">var</span>, <span class="tag-b">let</span> ou <span class="tag-b">const</span>.
+                    </p>
+                    <p>
+                        A diferença entre elas é que <span class="tag-b">var</span> é uma variável que pode ter o valor alterado, ou seja, podemos mudar o valor dela depois de criada.
+                    </p>
+                    <p>
+                        A <span class="tag-b">let</span> também permite a alteração do valor, mas possui escopo de bloco — ou seja, só pode ser acessada dentro do bloco onde foi criada.
+                    </p>
+                    <p>
+                        Já a <span class="tag-b">const</span> é uma variável cujo valor não pode ser alterado após sua criação.
+                    </p>
+                    <div class="content__exemplo_val">
+                        <p>Um exemplo é quando criamos uma variável, e o JavaScript reserva um espaço na memória do computador, observe a imagem a seguir:</p>
+                        <img src="src/images/val_exemplo.png" alt="Imagem de duas caixas com um texto(joãozin) para o nome e a outra com um numero(32) para a idade">
+                    </div>
+                </div>
+                <div class="item_list__content">
+                    <h2 id="t11">Armazenando Elementos HTML</h2>
+                    <p>
+                        Podemos armazenar elementos HTML em variáveis usando o método 
+                        <span class="tag-b">document.querySelector()</span> ou 
+                        <span class="tag-b">document.getElementById()</span>.
+                    </p>
+                    <p>
+                        Utilizamos o <span class="tag-b">querySelector()</span> para selecionar um elemento HTML usando um seletor CSS. 
+                        Com ele, conseguimos buscar elementos por tag, classe, id e outros atributos.
+                    </p>
+                    <p>
+                        Por exemplo, para selecionar um elemento com a classe "minha-classe", podemos fazer assim: 
+                        <span class="tag-b">document.querySelector('.minha-classe');</span>. 
+                        Assim conseguimos acessar o elemento HTML pela classe.
+                    </p>
+                    <p>
+                        Já o <span class="tag-b">getElementById()</span> é usado para selecionar um elemento HTML pelo seu ID. 
+                        Por exemplo: <span class="tag-b">document.getElementById('meu-id');</span>.
+                    </p>
+                    <p>
+                        Agora vamos armazenar os elementos HTML em variáveis. Para isso, podemos criar uma variável chamada 
+                        <span class="tag-b">meuElemento</span> e armazenar o elemento HTML com a classe "minha-classe" nela:
+                        <span class="tag-b">let meuElemento = document.querySelector('.minha-classe');</span>
+                    </p>
+                    <p>
+                        Com isso, podemos manipular o elemento HTML armazenado na variável 
+                        <span class="tag-b">meuElemento</span>: alterar o texto do elemento, adicionar ou remover classes e muito mais.
+                    </p>
+                </div>
+                <div class="item_list__content">
+                    <h2 id="t12">Manipulando uma pagina web com o DOM</h2>
+                    <p>
+                        O DOM (Document Object Model) é uma representação da estrutura de um documento HTML, e é usado para manipular os elementos HTML da página.
+                        Com o DOM, podemos acessar, modificar, adicionar e remover elementos HTML da página usando JavaScript.
+                    </p>
+                    <p>
+                        Podemos acessar os elementos HTML usando os métodos <span class="tag-b">document.querySelector()</span> ou <span class="tag-b">document.getElementById()</span>, como já vimos anteriormente.
+                    </p>
+                    <p>
+                        Depois de acessar um elemento HTML, podemos manipular ele usando as propriedades e métodos do DOM.
+                        Por exemplo, podemos alterar o texto de um elemento usando a propriedade <span class="tag-b">innerText</span>, como em:
+                        <span class="tag-b">meuElemento.innerText = 'Novo texto';</span>
+                    </p>
+                    <p>
+                        Também podemos mudar o estilo de um elemento usando a propriedade <span class="tag-b">style</span>, como em:
+                        <span class="tag-b">meuElemento.style.color = 'red';</span>
+                    </p>
+                    <p>
+                        Ou até mesmo mudar o fundo do elemento usando a propriedade <span class="tag-b">style.backgroundColor</span>, como em:
+                        <span class="tag-b">meuElemento.style.backgroundColor = 'blue';</span>
+                    </p>
+                    <p>
+                        Existem muitos outros métodos e propriedades do DOM que você pode usar para manipular os elementos HTML da página, como adicionar eventos, criar novos elementos, remover elementos, e muito mais.
+                    </p>
+                </div>
+                <div class="item_list__content">
+                    <h2 id="t13">Criando eventos com JavaScript</h2>
+                    <p>
+                        Eventos são ações que ocorrem, como cliques do mouse, pressionamento de teclas, carregamento da página e entre outros.
+                        Podemos criar eventos para responder ações como um clique em um botão, como seria isso?
+                        Para criar eventos podemos utilizar o método <span class="tag-b">addEventListener()</span>, que é usado para adicionar um evento a um elemento HTML, como por exemplo, um clique em um botão.
+                        Para esse exemplo, vamos criar um botão com a classe "meu-botao" e adicionar um evento de clique nele, assim:
+                        <div class="command_js">
+                            <span class="type_command">js</span>
+                            <span class="l"><span class="jv">const</span> <span class="jvv">meuBotao</span> = document.<span class="jm">querySelector(</span><span class="jvvv">'.meu-botao'</span><span class="jm">)</span>;</span>
+                            <span class="l b"><span class="jvv">meuBotao</span>.<span class="jm">addEventListener(</span><span class="jvvv">'click'</span>, <span class="jv">function</span><span class="jm">() </span><span class="pp">{</span></span>
+                            <span class="l b"><span class="jm">alert(</span><span class="jvvv">'Botão clicado!'</span><span class="jm">)</span>;</span>
+                            <span class="l"><span class="pp">}</span><span class="jm">)</span>;</span>
+                        </div>
+                        Neste exemplo, estamos buscando o elemento HTML com a classe "meu-botao" e adicionando um evento de clique nele, que irá exibir um alerta quando o botão for clicado.
+                        Você pode adicionar eventos a qualquer elemento HTML, e existem muitos tipos de eventos que você pode usar, como <span class="tag-b">mouseover</span>, <span class="tag-b">mouseout</span>, <span class="tag-b">keydown</span>, <span class="tag-b">keyup</span>, entre outros.
+                    </p>
+                </div>
+                <div class="item_list__content">
+                    <h2 id="t14">Exemplo Modo Dia e Noite com JavaScript</h2>
+                    <p class="t14">Digite na caixa de texto um comando para deixar a noite em dia e virse versa.</p>
+                    <div class="content__exemplo_tocha night">
+                        <div class="input">
+                            <ul class="input__sugestoes">
+                                <li>/</li>
+                                <li class="ocl">day</li>
+                            </ul>
+                            <div class="input__command">
+                                <input type="text" id="input_mine" autocomplete="off" placeholder="Digite o comando">
+                                <button class="button_mine"><img src="src/images/icon_enviar_mine.png" alt="Imagem do icone de enviar chat do minecraft"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_list__content">
+                    <h2>Código do Modo Dia e Noite acima</h2>
+                    <div class="command_js">
+                        <span class="type_command">js</span>
+                        <span class="l"><span class="jv">const</span> <span class="jvv">inputMine</span> = document.<span class="jm">getElementById(</span><span class="jvvv">'input_mine'</span><span class="jm">)</span>;</span>
+                        <span class="l"><span class="jv">const</span> <span class="jvv">imgMine</span> = document.<span class="jm">querySelector(</span><span class="jvvv">'.content__exemplo_tocha'</span><span class="jm">)</span>;</span>
+                        <span class="l"><span class="jv">const</span> <span class="jvv">buttonMine</span> = document.<span class="jm">querySelector(</span><span class="jvvv">'.button_mine'</span><span class="jm">)</span>;</span><br>
+
+                        <span class="l"><span class="jvv">inputMine</span>.<span class="jm">addEventListener(</span><span class="jvvv">'keypress'</span>, <span class="jm">(</span>e<span class="jm">)</span> <span class="pp">=> {</span></span>
+                        <span class="l b"><span class="jv">if</span> <span class="jmm">(</span> e.<span class="jvv">key</span> === <span class="jvvv">'Enter'</span> <span class="jmm">) {</span></span>
+                        <span class="l bb"><span class="jm">eventImgMinecraft()</span>;</span>
+                        <span class="l b"><span class="jmm">}</span></span>
+                        <span class="l"><span class="pp">}</span><span class="jm">)</span>;</span><br>
+
+                        <span class="l"><span class="jvv">buttonMine</span>.<span class="jm">addEventListener(</span><span class="jvvv">'click'</span>, <span class="jm">()</span> <span class="pp">=> {</span></span>
+                        <span class="l b"><span class="jm">eventImgMinecraft()</span>;</span>
+                        <span class="l"><span class="pp">}</span><span class="jm">)</span>;</span><br>
+
+                        <span class="l"><span class="jv">function</span> <span class="jm">eventImgMinecraft()</span> <span class="pp">{</span></span>
+                        <span class="l b"><span class="jv">if </span><span class="jmm">(</span><span class="jvv">inputMine</span>.value === <span class="jvvv">'/time set night'</span><span class="jmm">) {</span></span>
+                        <span class="l bb"><span class="jvv">imgMine</span>.classList.<span class="jm">remove</span><span class="pp">(</span><span class="jvvv">"day"</span><span class="pp">)</span>;</span>
+                        <span class="l bb"><span class="jvv">imgMine</span>.classList.<span class="jm">add</span><span class="pp">(</span><span class="jvvv">"night"</span><span class="pp">)</span>;</span>
+                        <span class="l b"><span class="jmm">}</span> <span class="jv">else if </span><span class="jmm">{</span></span>
+                        <span class="l bb"><span class="jvv">imgMine</span>.classList.<span class="jm">remove</span><span class="pp">(</span><span class="jvvv">"night"</span><span class="pp">)</span>;</span>
+                        <span class="l bb"><span class="jvv">imgMine</span>.classList.<span class="jm">add</span><span class="pp">(</span><span class="jvvv">"day"</span><span class="pp">)</span>;</span>
+                        <span class="l b"><span class="jmm">}</span></span>
+                        <span class="l"><span class="pp">}</span></span>
+                    </div>
+                </div>
+            </div>
+            <form class="container_content__item_list praticando">
+                <h2 class="item_list__text">
+                    <span class="material-symbols-outlined">assignment</span>
+                    <span>Praticando</span>
+                </h2>
+
+                <h2 class="title_qt" id="q1">HTML</h2>
+
+                <div class="input_label">
+                    <label>1. Para que serve a tag <span class="tag-b">&lt;html&gt;</span>?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt1_op2" name="qt1" value="b">
+                            <label for="qt1_op2">Para inserir imagens na página</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt1_op3" name="qt1" value="c">
+                            <label for="qt1_op3">Para criar links para outras páginas</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt1_op1" name="qt1" value="a">
+                            <label for="qt1_op1">Para definir o início e o fim de um documento HTML</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt1_op4" name="qt1" value="d">
+                            <label for="qt1_op4">Para definir o estilo da página</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>2. Qual tag usamos para criar títulos na página?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt2_op2" name="qt2" value="b">
+                            <label for="qt2_op2">A tag <span class="tag-b">&lt;html&gt;</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt2_op3" name="qt2" value="c">
+                            <label for="qt2_op3">A tag <span class="tag-b">&lt;h1&gt;</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt2_op4" name="qt2" value="d">
+                            <label for="qt2_op4">A tag <span class="tag-b">&lt;body&gt;</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt2_op1" name="qt2" value="a">
+                            <label for="qt2_op1">A tag <span class="tag-b">&lt;title&gt;</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>3. Qual é a função da tag <span class="tag-b">&lt;head&gt;</span>?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt3_op2" name="qt3" value="b">
+                            <label for="qt3_op2">Exibe o conteúdo principal da página.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt3_op3" name="qt3" value="c">
+                            <label for="qt3_op3">Cria links para outras páginas.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt3_op1" name="qt3" value="a">
+                            <label for="qt3_op1">Contém informações sobre a página, como título e metadados.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt3_op4" name="qt3" value="d">
+                            <label for="qt3_op4">Define o idioma do conteúdo da página.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>4. O que faz a tag <span class="tag-b">&lt;meta charset="UTF-8"&gt;</span>?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt4_op2" name="qt4" value="b">
+                            <label for="qt4_op2">Adiciona uma imagem à página.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt4_op1" name="qt4" value="a">
+                            <label for="qt4_op1">Define a codificação de caracteres como UTF-8.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt4_op3" name="qt4" value="c">
+                            <label for="qt4_op3">Define o idioma da página como inglês.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt4_op4" name="qt4" value="d">
+                            <label for="qt4_op4">Define o título da aba do navegador.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>5. O que aparece dentro da tag <span class="tag-b">&lt;body&gt;</span>?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt5_op2" name="qt5" value="b">
+                            <label for="qt5_op2">Os metadados da página.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt5_op1" name="qt5" value="a">
+                            <label for="qt5_op1">O conteúdo visível da página, como textos, imagens e links.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt5_op3" name="qt5" value="c">
+                            <label for="qt5_op3">As configurações de codificação de caracteres.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt5_op4" name="qt5" value="d">
+                            <label for="qt5_op4">Os scripts de carregamento da página.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="button_qt html" type="button">Concluir</button>
+
+                <h2 class="title_qt" id="q2">CSS</h2>
+
+                <div class="input_label">
+                    <label>6. Para que serve o CSS em uma página web?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt6_op2" name="qt6" value="b">
+                            <label for="qt6_op2">Para estilizar e formatar a aparência da página</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt6_op3" name="qt6" value="c">
+                            <label for="qt6_op3">Para adicionar interatividade à página</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt6_op4" name="qt6" value="d">
+                            <label for="qt6_op4">Para conectar a página a um banco de dados</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt6_op1" name="qt6" value="a">
+                            <label for="qt6_op1">Para criar a estrutura da página</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>7. Qual código usamos para mudar a cor do fundo de um site?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt7_op4" name="qt7" value="d">
+                            <label for="qt7_op4"><span class="tag-b">border-color</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt7_op1" name="qt7" value="a">
+                            <label for="qt7_op1"><span class="tag-b">background-color</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt7_op2" name="qt7" value="b">
+                            <label for="qt7_op2"><span class="tag-b">color</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt7_op3" name="qt7" value="c">
+                            <label for="qt7_op3"><span class="tag-b">font-style</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>8. Qual propriedade usamos para mudar a cor do texto?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt8_op2" name="qt8" value="b">
+                            <label for="qt8_op2"><span class="tag-b">background</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt8_op3" name="qt8" value="c">
+                            <label for="qt8_op3"><span class="tag-b">text-align</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt8_op1" name="qt8" value="a">
+                            <label for="qt8_op1"><span class="tag-b">color</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt8_op4" name="qt8" value="d">
+                            <label for="qt8_op4"><span class="tag-b">font-weight</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>9. O que significa a sigla CSS?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt9_op2" name="qt9" value="b">
+                            <label for="qt9_op2">Creative Style System</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt9_op3" name="qt9" value="c">
+                            <label for="qt9_op3">Coded Style Syntax</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt9_op4" name="qt9" value="d">
+                            <label for="qt9_op4">Color Style Scheme</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt9_op1" name="qt9" value="a">
+                            <label for="qt9_op1">Cascading Style Sheets</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>10. Onde geralmente colocamos o código CSS em um projeto?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt10_op1" name="qt10" value="a">
+                            <label for="qt10_op1">Em um arquivo separado com extensão .css</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt10_op2" name="qt10" value="b">
+                            <label for="qt10_op2">Dentro de um arquivo .png</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt10_op3" name="qt10" value="c">
+                            <label for="qt10_op3">No banco de dados</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt10_op4" name="qt10" value="d">
+                            <label for="qt10_op4">Em uma planilha Excel</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button class="button_qt css" type="button">Concluir</button>
+
+                <h2 class="title_qt" id="q3">JavaScript</h2>
+
+                <div class="input_label">
+                    <label>11. Para que serve o JavaScript em uma página web?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt11_op1" name="qt11" value="a">
+                            <label for="qt11_op1">Para adicionar interatividade e comportamentos dinâmicos à página.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt11_op2" name="qt11" value="b">
+                            <label for="qt11_op2">Para definir o estilo visual da página.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt11_op3" name="qt11" value="c">
+                            <label for="qt11_op3">Para estruturar o conteúdo da página.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt11_op4" name="qt11" value="d">
+                            <label for="qt11_op4">Para armazenar dados em servidores.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>12. Qual comando usamos para mostrar algo na tela com JavaScript?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt12_op2" name="qt12" value="b">
+                            <label for="qt12_op2"><span class="tag-b">print()</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt12_op3" name="qt12" value="c">
+                            <label for="qt12_op3"><span class="tag-b">alertText()</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt12_op4" name="qt12" value="d">
+                            <label for="qt12_op4"><span class="tag-b">document.writeText()</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt12_op1" name="qt12" value="a">
+                            <label for="qt12_op1"><span class="tag-b">console.log()</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>13. Como criamos uma variável em JavaScript?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt13_op2" name="qt13" value="b">
+                            <label for="qt13_op2"><span class="tag-b">variável nome = "João";</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt13_op1" name="qt13" value="a">
+                            <label for="qt13_op1"><span class="tag-b">let nome = "João";</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt13_op3" name="qt13" value="c">
+                            <label for="qt13_op3"><span class="tag-b">def nome = "João";</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt13_op4" name="qt13" value="d">
+                            <label for="qt13_op4"><span class="tag-b">var nome: "João";</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>14. O que é um evento de clique em JavaScript?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt14_op1" name="qt14" value="a">
+                            <label for="qt14_op1">É uma ação que ocorre quando o usuário clica em um elemento da página.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt14_op2" name="qt14" value="b">
+                            <label for="qt14_op2">É um botão padrão do navegador.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt14_op3" name="qt14" value="c">
+                            <label for="qt14_op3">É uma função de login automático.</label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt14_op4" name="qt14" value="d">
+                            <label for="qt14_op4">É um tipo de estilo CSS para botões.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_label">
+                    <label>15. Qual comando usamos para buscar um elemento pelo id?</label>
+                    <div class="input_label__radio_options">
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt15_op2" name="qt15" value="b">
+                            <label for="qt15_op2"><span class="tag-b">document.querySelectorAll()</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt15_op3" name="qt15" value="c">
+                            <label for="qt15_op3"><span class="tag-b">getElementClass()</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt15_op4" name="qt15" value="d">
+                            <label for="qt15_op4"><span class="tag-b">element.getById()</span></label>
+                        </div>
+                        <div class="radio_options__radio_option">
+                            <input type="radio" id="qt15_op1" name="qt15" value="a">
+                            <label for="qt15_op1"><span class="tag-b">document.getElementById()</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="button_qt js" type="button">Concluir</button>
+
+            </form>
+        </div>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>
